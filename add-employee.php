@@ -66,7 +66,7 @@ session_start();
                         <div class="form-group mx-4 mt-4">
                             <label for="employeedoj">Date of Join</label>
                             <input type="date" name="date" id="employeedoj" required class="form-control" placeholder="Date of Joining">
-                        </div>
+                        </div> 
                         <div class="form-group mx-4 mt-4">
                             <label for="employeegender">Gender</label>
                             <select name="gender" id="employeegender" class="custom-select" required>
