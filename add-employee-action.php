@@ -28,8 +28,7 @@ session_start();
 
       <div class="container h-100">
         <div class="row align-items-center h-100" >
-            
-            
+           
           <div class="col-8 mx-auto">
 
                 <div class="shadow-lg bg-white mt-4 rounded">
