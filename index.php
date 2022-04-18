@@ -91,8 +91,9 @@ session_start();
 		empid varchar(20) NOT NULL,
 		mobile bigint(15) NOT NULL,
 		email varchar(40) NOT NULL,
+		addr varchar(225) NOT NULL,
 		design varchar(20) NOT NULL,
-		date1 varchar(20) NOT NULL,
+		date1 integer NOT NULL,
 		gen varchar(8) NOT NULL
 		)";
 

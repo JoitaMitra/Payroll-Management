@@ -21,12 +21,14 @@ session_start();
         }
       ?>
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 theme-bg border-bottom shadow-md">
-        <a class="navbar-brand brand-light my-0 mr-md-auto" href="#">
+        <a class="navbar-brand brand-light my-0 mr-md-auto" href="dashboard.php">
             Payroll
         </a>
       
         <a href="add-employee.php" class="nav-link active text-light">Add Employees</a>
         <a href="employee-details.php" class="nav-link text-light">Employee Details</a>
+        <a href="salary-calc.php" class="nav-link text-light">Salary Calculation</a>
+        <a href="all-salaries.php" class="nav-link text-light">All Salaries</a>
         
         <a class="btn btn-outline logout-btn" href="logout.php">Logout</a>
       </div>
@@ -54,6 +56,7 @@ session_start();
                         <th scope="col">Employee Name</th>
                         <th scope="col">Mobile No</th>
                         <th scope="col">Email</th>
+                        <th scope="col">Address</th>
                         <th scope="col">Designation</th>
                         <th scope="col">Date of Join</th>
                         <th scope="col">Gender</th>
@@ -74,7 +77,9 @@ session_start();
                                 print "</td> <td>";
                                 echo $row["mobile"]; 
                                 print "</td> <td>";
-                                echo $row["email"]; 
+                                echo $row["email"];
+                                print "</td> <td>";
+                                echo $row["address"]; 
                                 print "</td> <td>";
                                 echo $row["design"]; 
                                 print "</td> <td>";

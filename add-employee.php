@@ -21,12 +21,14 @@ session_start();
         }
       ?>
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 theme-bg border-bottom shadow-md">
-        <a class="navbar-brand brand-light my-0 mr-md-auto" href="#">
+        <a class="navbar-brand brand-light my-0 mr-md-auto" href="dashboard.php">
             Payroll
         </a>
       
         <a href="add-employee.php" class="nav-link active text-light">Add Employees</a>
         <a href="employee-details.php" class="nav-link text-light">Employee Details</a>
+        <a href="salary-calc.php" class="nav-link text-light">Salary Calculation</a>
+        <a href="all-salaries.php" class="nav-link text-light">All Salaries</a>
         
         <a class="btn btn-outline logout-btn" href="logout.php">Logout</a>
       </div>
@@ -55,18 +57,24 @@ session_start();
                             <input type="email" name="email" required class="form-control" placeholder="Email">
                         </div>
                         <div class="form-group mx-4 mt-4">
+                            <input type="text" name="address" required class="form-control" placeholder="Address">
+                        </div>
+                        <div class="form-group mx-4 mt-4">
                             <select name="designation" class="custom-select" required>
                                 <option value="">Designation</option>
-                                <option value="Daily Labour">Daily Labour</option>
-                                <option value="Supervisor">Supervisor</option>
-                                <option value="Accountant">Accountant</option>
-                                <option value="Asst. Manager">Assistant Manager</option>
+                                <option value="Founder">Founder</option>
+                                <option value="Co-Founder">Co-Founder</option>
+                                <option value="Chief Advisor">Chief Advisor</option>
+                                <option value="Secretory">Secretory</option>
+                                <option value="CMO">CMO</option>
+                                <option value="Chief of Staff">Chief of Staff</option>
+                                <option value="HR">HR</option>
                             </select>
                         </div>
                         <div class="form-group mx-4 mt-4">
                             <label for="employeedoj">Date of Join</label>
                             <input type="date" name="date" id="employeedoj" required class="form-control" placeholder="Date of Joining">
-                        </div> 
+                        </div>
                         <div class="form-group mx-4 mt-4">
                             <label for="employeegender">Gender</label>
                             <select name="gender" id="employeegender" class="custom-select" required>

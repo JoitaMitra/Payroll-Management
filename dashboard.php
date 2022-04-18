@@ -27,6 +27,8 @@ session_start();
       
         <a href="add-employee.php" class="nav-link active text-light">Add Employees</a>
         <a href="employee-details.php" class="nav-link text-light">Employee Details</a>
+        <a href="salary-calc.php" class="nav-link text-light">Salary Calculation</a>
+        <a href="all-salaries.php" class="nav-link text-light">All Salaries</a>
         
         <a class="btn btn-outline logout-btn" href="logout.php">Logout</a>
       </div>

@@ -21,14 +21,15 @@ session_start();
         }
       ?>
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 theme-bg border-bottom shadow-md">
-        <a class="navbar-brand brand-light my-0 mr-md-auto" href="#">
+        <a class="navbar-brand brand-light my-0 mr-md-auto" href="dashboard.php">
             Payroll
         </a>
       </div>
 
       <div class="container h-100">
         <div class="row align-items-center h-100" >
-           
+            
+            
           <div class="col-8 mx-auto">
 
                 <div class="shadow-lg bg-white mt-4 rounded">
@@ -47,10 +48,10 @@ session_start();
                         }
 
                         else {
-                                $sql="INSERT INTO employee (name,empid,mobile,email,design,date1,gen) VALUES ('$_POST[employeename]','$_POST[employeeid]','$_POST[mobile]','$_POST[email]','$_POST[designation]','$_POST[date]','$_POST[gender]')";
+                                $sql="INSERT INTO employee (name,empid,mobile,email,Address,design,date1,gen) VALUES ('$_POST[employeename]','$_POST[employeeid]','$_POST[mobile]','$_POST[email]','$_POST[address]','$_POST[designation]','$_POST[date]','$_POST[gender]')";
                     
                                 if ($conn->query($sql) === TRUE) {
-                                        echo"<p>Employee Details Uploaded Successfully</p><form action='employee-details.php'><button type='submit' class='btn theme-btn'>Done</button></form>";
+                                        echo"<p>Employee Details Uploaded Successfully</p><form action='dashboard.php'><button type='submit' class='btn theme-btn'>Done</button></form>";
                                 }
                                 else {
                                         echo "Error: " . $sql . "<br>" . $conn->error;

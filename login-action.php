@@ -14,7 +14,7 @@ session_start();
 </head>
 <body>
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 theme-bg border-bottom shadow-md">
-        <a class="navbar-brand brand-light my-0 mr-md-auto" href="#">
+        <a class="navbar-brand brand-light my-0 mr-md-auto" href="dashboard.php">
             Payroll
         </a>
       </div>
@@ -40,7 +40,7 @@ session_start();
                         $result=mysqli_query($conn,$sql);
                         if(mysqli_num_rows($result)>0){
                             $_SESSION["managerid"] = $managerid;
-                            header("Location:add-employee.php");
+                            header("Location:dashboard.php");
                         }
                         else {
                             
